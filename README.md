@@ -2,5 +2,12 @@
 This file-action triggered workflow modifies Southwest Airlines calendar (ICS) files to fit my needs. 
 ![workflow](https://github.com/woodwerk/alfred_modifySWA/blob/master/modify%20SWA%20ICS.png)
 
-The default ICS files contains all the crucial information but it's not that well arranged for viewing on mobile devices and there's a lot of extraneous text in the notes. I wanted to rearrange and streamline the information to make the event title show just the flight numbers (e.g., SWA: 5956/5694), have the location be the start and end airport codes (e.g., ABQ to SLC), include one day and 2 hour alerts and edit the notes field to contain only the trip itinerary.
+The ICS files that you can download from the SWA website contain all the crucial information for your flights but it's not that well-arranged for viewing on mobile devices and there's a lot of extraneous text in the notes.
 
+I wanted to rearrange and streamline the information to make the event title show just the flight numbers (e.g., SWA: 5956/5694), have the location be the start and end airport codes (e.g., ABQ to SLC), include one day and 2 hour alerts and edit the notes field to contain only the trip itinerary.
+
+The file-action feeds the files to an AppleScript that handles all the text manipulation and saves the updated ICS file(s). Double-click the revised ICS files to add them to your calendar. Now the compact view of the event show just the most critical information - flights, cities and times. Better yet on the calendar or Fantastical watch complication prominently shows the flight numbers so you can easily check gate information on the monitors in the terminal
+
+![watch](https://github.com/woodwerk/alfred_modifySWA/blob/master/watch.PNG)
+
+This [PDF](https://github.com/woodwerk/alfred_modifySWA/blob/master/Modify%20SWA%20ICS%20files.pdf) provides more about how the workflow operates and the AppleScript code that does the work.
